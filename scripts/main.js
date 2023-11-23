@@ -5,11 +5,7 @@
     on_page_load()
   });
 
-  /**
-   * Function gets called when page is loaded.
-   */
   function on_page_load() {
-    // Initialize On-scroll Animations
     AOS.init({
       anchorPlacement: 'top-left',
       duration: 600,
@@ -20,9 +16,6 @@
     });
   }
 
-  /**
-   * Navbar effects and scrolltop buttons upon scrolling
-   */
   const navbar = document.getElementById('header-nav')
   var body = document.getElementsByTagName("body")[0]
   const scrollTop = document.getElementById('scrolltop')
@@ -40,9 +33,6 @@
     }
   };
 
-  /**
-   * Masonry Grid
-   */
   var elem = document.querySelector('.grid');
   if(elem) {
     imagesLoaded(elem, function() {
